@@ -1,0 +1,258 @@
+div {
+    overflow: hidden;
+    float: left;
+}
+
+div img {
+    transition: all .4s;
+}     
+
+#preview {  
+    float: left;
+    max-width: 700px;
+    height: 1000px;
+    border: 3px black solid;
+}
+
+#btnpic {
+    width: 30px;
+    height: 30px;
+}
+
+#numbertitle {
+    font-size: 30px;
+    margin-left: 0;
+    padding: 5px;
+    text-align: center;
+    max-width: 700px;
+}
+
+#numberpicture {
+    margin: 0px;
+    max-width: 700px;
+    height: auto;
+    border-bottom: black 1px solid;
+}
+
+.small {
+    width: 150px;
+    height: 150px;
+}
+
+#number1 {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+    border: 3px black solid;
+}
+
+#number1:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#number2 {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#number2:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#number3 {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#number3:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#number4 {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#number4:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#number5 {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#number5:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#alphabettitle {
+    font-size: 30px;
+    margin-left: 0;
+    padding: 5px;
+    text-align: center;
+    max-width: 700px;
+}
+
+#alphabetpicture {
+    margin: 0px;
+    max-width: 700px;
+    height: 0px;
+    border-bottom: black 1px solid;
+}
+
+#a {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#a:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#b {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#b:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#c {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#c:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#d {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#d:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#e {
+    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    display:block;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#e:hover {  
+    width: 140px;
+    height: 140px;
+    display:block;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+.emptytitle {
+    font-size: 30px;
+    margin-left: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.emptypicture {
+    margin: 0px;
+    width: 700px;
+    height: 50px;
+    border-bottom: black 1px solid;
+}
+
+.big {
+    margin-left: 100px;
+    width: 1280px;
+    height: 720px;
+}
+
+#bigpicture {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 720px;
+}
+
+
+
+
+

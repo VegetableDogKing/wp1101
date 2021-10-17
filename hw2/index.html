@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的相簿</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <script src="main.js"></script>
+
+    <div id="preview">
+        <div class="album">
+            <div id="numbertitle">
+                數字
+                <button class="btn" onclick="numberbutton_click()">
+                    <img src="point.png" alt="point" id="btnpic">
+                </button>
+            </div>
+            <div id="numberpicture">
+                <div class="small">
+                    <img src="image/number/1.png" 
+                         alt="1"
+                         id="number1"
+                         onclick="n1_click()">
+                </div>
+                <div class="small">
+                    <img id="number2"
+                         src="image/number/2.png" 
+                         alt="2"
+                         onclick="n2_click()">
+                </div>
+                <div class="small">
+                    <img src="image/number/3.png" 
+                         alt="3"
+                         id="number3"
+                         onclick="n3_click()">
+                </div>
+                <div class="small">
+                    <img src="image/number/4.png" 
+                         alt="4"
+                         id="number4"
+                         onclick="n4_click()">
+                </div>
+                <div class="small">
+                    <img src="image/number/5.png" 
+                         alt="5"
+                         id="number5"
+                         onclick="n5_click()">
+                </div>  
+            </div>
+        </div> 
+
+        <div class="album">
+            <div id="alphabettitle">
+                字母
+                <button class="btn" onclick="alphabetbutton_click()">
+                    <img src="point.png" alt="point" id="btnpic">
+                </button>
+            </div>
+            <div id="alphabetpicture">
+                <div class="small">
+                    <img src="image/alphabet/a.png" 
+                         alt="a"
+                         id="a"
+                         onclick="a_click()">
+                </div>
+                <div class="small">
+                    <img src="image/alphabet/b.png" 
+                         alt="b"
+                         id="b"
+                         onclick="b_click()">
+                </div>
+                <div class="small">
+                    <img src="image/alphabet/c.png" 
+                         alt="c"
+                         id="c"
+                         onclick="c_click()">
+                </div>
+                <div class="small">
+                    <img src="image/alphabet/d.png" 
+                         alt="d"
+                         id="d"
+                         onclick="d_click()">
+                </div>
+                <div class="small">
+                    <img src="image/alphabet/e.png" 
+                         alt="e"
+                         id="e"
+                         onclick="e_click()">
+                </div> 
+            </div>
+        </div> 
+
+        <div class="album">
+            <div class="emptytitle">
+                空白
+                <button class="btn" onclick="empty_click()">
+                    <img src="point.png" alt="point" id="btnpic">
+                </button>
+            </div>
+            <div class="emptypicture">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="big">
+        <img src="image/number/1.png" alt="number1" id="bigpicture">
+    </div>
+
+</body>
+
+</html>
