@@ -96,12 +96,16 @@ const App = () => {
       if (operator !== null) {
         if (operator === "+") {
           setMemory(memory + parseFloat(value));
+          setDispnum((memory + parseFloat(value)).toString());
         } else if (operator === "−") {
           setMemory(memory - parseFloat(value));
+          setDispnum((memory - parseFloat(value)).toString());
         } else if (operator === "×") {
           setMemory(memory * parseFloat(value));
+          setDispnum((memory * parseFloat(value)).toString());
         } else if (operator === "÷") {
           setMemory(memory / parseFloat(value));
+          setDispnum((memory / parseFloat(value)).toString());
         }
       } else {
         setMemory(parseFloat(value));
@@ -114,12 +118,16 @@ const App = () => {
       if (operator !== null) {
         if (operator === "+") {
           setMemory(memory + parseFloat(value));
+          setDispnum((memory + parseFloat(value)).toString());
         } else if (operator === "−") {
           setMemory(memory - parseFloat(value));
+          setDispnum((memory - parseFloat(value)).toString());
         } else if (operator === "×") {
           setMemory(memory * parseFloat(value));
+          setDispnum((memory * parseFloat(value)).toString());
         } else if (operator === "÷") {
           setMemory(memory / parseFloat(value));
+          setDispnum((memory / parseFloat(value)).toString());
         }
       } else {
         setMemory(parseFloat(value));
