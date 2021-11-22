@@ -8,52 +8,8 @@ function App() {
     const [number , setNumber] = useState('') ;
     const [status , setStatus] = useState('') ;
 
-    const startMenu = (
-        <div>
-            <button onClick={startGameOnClick}>
-                start game
-            </button>
-        </div>
-    )
-
-    const startGameOnClick = () => {
-        startGame
-    }
-
-    const winningMode = (
-        <>
-            <p>
-                you won! the number was {number}.
-            </p>
-            <buttom onClick={gameRestart}>
-                restart
-            </buttom>
-        </>
-    )
-
-    const gameRestart = () => {
-        restart ;
-    }
-
-    const gameMode = (
-        <>
-            <p>
-                Guess a number between 1 to 100
-            </p>
-            <input onChange={numOnChange}>
-            </input>
-            <button onClick={handleGuess} disabled={!number}>
-                guess!
-            </button>
-            <p>
-                {status}
-            </p>
-        </>
-    )
-
     const handleGuess = async() => {
-        guess ;
-        const response = await processGuessByBackend(number)
+        const response = await guess(number)
         if(response === 'Equal') {
             setHasWon(true) ;
         }
@@ -63,9 +19,56 @@ function App() {
         }
     }
 
+    const startGameOnClick = () => {
+        setHasStarted(true) ;
+        const msg = startGame();
+        console.log(msg) ;
+    }
+
+    const gameRestart = () => {
+        restart() ;
+        setHasWon(false) ;
+        setNumber('');
+    }
+
     const numOnChange = e => {
         setNumber(e.target.value) ;
     }
+
+    const startMenu = (
+        <div>
+            <button onClick={startGameOnClick}>
+                start game
+            </button>
+        </div>
+    )
+
+    const winningMode = (
+        <>
+            <p>
+                you won! the number was {number}.
+            </p>
+            <button onClick={gameRestart}>
+                restart
+            </button>
+        </>
+    )
+
+    const gameMode = (
+        <>
+            <p>
+                Guess a number between 1 to 100
+            </p>
+            <input onChange={numOnChange} value={number}>
+            </input>
+            <button onClick={handleGuess} disabled={!number}>
+                guess!
+            </button>
+            <p>
+                {status}
+            </p>
+        </>
+    )
 
     const game = (
         <div>
