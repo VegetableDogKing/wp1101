@@ -30,7 +30,7 @@ async function connect() {
     })
     .then(()=> console.log("mongo db connection created"));
   
-   // dataInit()
+    dataInit();
   
   app.use('/api', postRoute)
   
