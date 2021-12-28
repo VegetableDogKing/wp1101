@@ -14,9 +14,6 @@ mongoose.connect(
   useUnifiedTopology: true,
   })
   .then(()=> console.log("mongo db connection created"));
-
- dataInit() ;
-
 }
 
 export default { connect };
