@@ -5,39 +5,18 @@ import "dotenv-defaults/config.js";
 
 async function connect() {
   // TODO 1.1 Connect your MongoDB
-  require('dotenv').config()
-  const app = express()
-  
-  app.use(express.json())
-  app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
-    res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS')
-    res.header('Access-Control-Allow-Credentials', 'true')
-    next()
+
+const port = process.env.PORT || 5000
+
+mongoose.connect(
+  process.env.MONGO_URL,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
   })
-  
-  const port = process.env.PORT || 5000
-  const dboptions = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  }
-  
-  mongoose.connect(
-    process.env.MONGO_URL,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    })
-    .then(()=> console.log("mongo db connection created"));
-  
-    dataInit();
-  
-  app.use('/api', postRoute)
-  
-  app.listen(port, () => {
-    console.log(`Server is up on port ${port}.`)
-  })
-  
+  .then(()=> console.log("mongo db connection created"));
+
+ dataInit() ;
+
 }
 
 export default { connect };
